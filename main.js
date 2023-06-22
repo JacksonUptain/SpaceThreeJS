@@ -56,11 +56,7 @@ gltfLoader.load('Models/space_station_3.glb' , function (gltf) {
 
 })
 
-gltfLoader.load('Models/space_brute.glb' ,  (gltf) => {
-    gltf.scene.position.set(104.63172040071409,82.30873002868643,-116.34052465015246);
-    gltf.scene.scale.set(0.1,0.1,0.1);
-    scene.add( gltf.scene );
-})
+
 
 gltfLoader.load('Models/space_station_4.glb' , function (gltf)  {
     gltf.scene.position.set(950,100,-5);
@@ -99,23 +95,23 @@ let gary = new THREE.PointLight(0x0000FF, 60, 920);
 gary.position.set(-950,100,-5);
 scene.add(gary);
 
-gltfLoader.load('Models/space_train/scene.gltf' , (gltfScene) => {
+gltfLoader.load('space_train/scene.gltf' , (gltfScene) => {
     gltfScene.scene.position.set(-520,100,-5);
     gltfScene.scene.scale.set(10,10,10);
     scene.add( gltfScene.scene );
 })
-gltfLoader.load('Models/space_train/scene.gltf' , (gltfScene) => {
+gltfLoader.load('space_train/scene.gltf' , (gltfScene) => {
     gltfScene.scene.position.set(520,100,-5);
     gltfScene.scene.scale.set(10,10,10);
     scene.add( gltfScene.scene );
 })
-gltfLoader.load('Models/space_train/scene.gltf' , (gltfScene) => {
+gltfLoader.load('space_train/scene.gltf' , (gltfScene) => {
     gltfScene.scene.position.set(0,100,-520);
     gltfScene.scene.scale.set(10,10,10);
     gltfScene.scene.rotation.set(0, 90, 0);
     scene.add( gltfScene.scene );
 })
-gltfLoader.load('Models/space_train/scene.gltf' , (gltfScene) => {
+gltfLoader.load('space_train/scene.gltf' , (gltfScene) => {
     gltfScene.scene.position.set(0,100,520);
     gltfScene.scene.scale.set(10,10,10);
     gltfScene.scene.rotation.set(0, 90, 0);
@@ -128,12 +124,7 @@ scene.add(light);
 
 
 
-gltfLoader.load('Models/space_cephalopod.glb' , (gltfScene) => {
-    gltfScene.scene.position.set(-950, 350, -5);
-    gltfScene.scene.rotation.set(0, 90, 0);
-    gltfScene.scene.scale.set(100, 100, 100);
-    scene.add( gltfScene.scene );
-})
+
 
 
 
